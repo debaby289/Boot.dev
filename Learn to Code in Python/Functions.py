@@ -3,7 +3,6 @@ def area_of_circle(radius):
     area = pi * radius * radius
     return area
 
-
 sword_length = 1.0
 spear_length = 2.0
 
