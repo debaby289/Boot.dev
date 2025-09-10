@@ -2,7 +2,7 @@
 Packed with 15 courses and 8 projects, this path takes most beginners about 12 months to complete
 Backend developers build the systems that power the large-scale web applications that you use every day. In this complete learning path, you'll start by learning the fundamentals of programming and computer science in Python and C, then you'll learn all about building scalable and secure back-end systems using Golang, SQL, and Docker.
 
- Courses
+Courses
 1. Learn to Code in Python
 2. Learn Linux
 3. Learn Git
