@@ -2,7 +2,7 @@ def award_enchantments(start, end, step):
     for quest_number in range(start, end, step):
         if quest_number % 3 == 0:
             enchantment_strength = quest_number * 5
-            print(
+            print (
                 f"Enchantment of strength {enchantment_strength} awarded for completing {quest_number} quests!"
             )
 
