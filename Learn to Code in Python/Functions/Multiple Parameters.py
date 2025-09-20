@@ -1,3 +1,7 @@
+"""
+Assignment
+We need to calculate the total damage from a combo of three damaging attacks. Complete the triple_attack function by returning the sum of its parameters, damage_one, damage_two, and damage_three.
+"""
 def triple_attack(damage_one, damage_two, damage_three):
     t_attack = damage_one + damage_two + damage_three
     return t_attack

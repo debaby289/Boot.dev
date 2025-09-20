@@ -2,7 +2,7 @@ def count_vowels(text):
     count = 0
     for ch in text:
         # Bug: this condition is always true for non-empty strings
-        if ch == "a" or ch == "e" or ch == "i" or ch == "o" or ch == "u" or ch == "A" or ch == "E" or ch == "I" or ch == "O" or ch == "U":
+        if ch in "aeiouAEIOU":
             count += 1
     return count
 

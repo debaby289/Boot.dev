@@ -1,3 +1,10 @@
+"""
+Assignment
+We need to calculate the size of a weapon's "attack area". With a 1.0 meter sword, for example, a player can attack in an area of 3.14 square meters around them. You can use the area_of_circle function to do that calculation.
+
+Fix the bug on line 13 by calling the area_of_circle function with the spear_length as input and store the result in the spear_area variable.
+"""
+
 def area_of_circle(radius):
     pi = 3.14
     area = pi * radius * radius

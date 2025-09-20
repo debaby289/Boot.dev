@@ -1,3 +1,10 @@
+"""
+Assignment
+Complete the curse function. It accepts a weapon_damage parameter and returns two values:
+    The lesser_cursed damage: reduce the input weapon_damage from 100% to 50% (50% reduction).
+    The greater_cursed damage: reduce the input weapon_damage from 100% to 25% (75% reduction).
+"""
+
 def curse(weapon_damage):
     lesser_cursed = weapon_damage * .50
     greater_cursed = weapon_damage * .25
