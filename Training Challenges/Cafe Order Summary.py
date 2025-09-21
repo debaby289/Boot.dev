@@ -1,3 +1,27 @@
+""""
+Cafe Order Summary
+Use the provided variables to build a short order summary for a cafe.
+
+Compute new variables using only the given values, then print the results in order.
+
+What to do:
+Create these variables using arithmetic with the provided prices and quantities:
+    coffee_total_cents
+    sandwich_total_cents
+    grand_total_cents (sum of the two totals)
+Print exactly four lines, in this order:
+    The order message by combining message_start, customer_name, and message_end
+    label_coffee followed by the value of coffee_total_cents
+    label_sandwich followed by the value of sandwich_total_cents
+    label_grand followed by the value of grand_total_cents
+
+Expected behavior example (structure only):
+    Line 1: Order for: Ada ready
+    Line 2: Coffee total (cents): 600
+    Line 3: Sandwich total (cents): 750
+    Line 4: Grand total (cents): 1350
+"""
+
 message_start = "Order for: "
 message_end = " ready"
 customer_name = "Ada"

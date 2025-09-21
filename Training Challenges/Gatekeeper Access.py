@@ -4,19 +4,18 @@ Complete the gate_decision(level, reputation, has_key) function.
 Given a player's stats, decide if they can enter a restricted area. Use comparisons and basic boolean logic.
 
 Return exactly one of these strings:
-
-"Enter: Keyholder"
-"Enter: Veteran"
-"Wait"
-"Denied"
+    "Enter: Keyholder"
+    "Enter: Veteran"
+    "Wait"
+    "Denied"
+    
 Rules (checked in this order):
+    If the player has the key AND their level is 5 or higher → "Enter: Keyholder"
+    Else if their level is 10 or higher AND their reputation is 100 or higher → "Enter: Veteran"
+    Else if their level is 7 or higher OR their reputation is 70 or higher → "Wait"
+    Else → "Denied"
 
-If the player has the key AND their level is 5 or higher → "Enter: Keyholder"
-Else if their level is 10 or higher AND their reputation is 100 or higher → "Enter: Veteran"
-Else if their level is 7 or higher OR their reputation is 70 or higher → "Wait"
-Else → "Denied"
 Notes:
-
 has_key is a boolean (True or False).
 Use comparison operators like >= and boolean operators like and/or.
 """

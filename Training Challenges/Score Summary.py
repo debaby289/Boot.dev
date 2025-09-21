@@ -1,40 +1,42 @@
+""""
+Score Summary
+Complete the score_summary function.
+
+Given a list of integer scores, return three values in this order:
+
+The smallest score
+The largest score
+The average score rounded to 2 decimal places
+If the list is empty, return (0, 0, 0).
 """
-Fix Vowel Counter
-The count_vowels function is supposed to count how many vowels are in a string. It should count both lowercase and uppercase vowels: a, e, i, o, u.
 
-Right now the function is buggy. It returns the wrong count for many inputs.
+def score_summary(scores):
+    if not scores:
+        return 0, 0, 0
 
-Expected behavior:
-    Count vowels only (a, e, i, o, u)
-    Be case-insensitive (count both A and a)
-    Do not count other characters
-"""
-
-def count_vowels(text):
-    count = 0
-    for ch in text:
-        # Bug: this condition is always true for non-empty strings
-        if ch in "aeiouAEIOU":
-            count += 1
-    return count
+    smallest = min(scores)
+    largest = max(scores)
+    average = round(sum(scores) / len(scores), 2)
+    return smallest, largest, average
 
 run_cases = [
-    ("Boot.dev", 3),
-    ("Hello there", 4),
-    ("PYTHON", 1),
+    ([10, 20, 30], (10, 30, 20.0)),
+    ([5, 5, 5, 5], (5, 5, 5.0)),
+    ([3, 1, 2, 4], (1, 4, 2.5)),
 ]
 
 submit_cases = run_cases + [
-    ("", 0),
-    ("bcdfg", 0),
-    ("aeiouAEIOU", 10),
+    ([], (0, 0, 0)),
+    ([42], (42, 42, 42.0)),
+    ([-5, -1, -3, -2], (-5, -1, -2.75)),
+    ([100, 50, 75, 25, 0], (0, 100, 50.0)),
 ]
 
 
 def test(input1, expected_output):
     print("---------------------------------")
-    print(f"Input: {input1}")
-    result = count_vowels(input1)
+    print(f"Input scores: {input1}")
+    result = score_summary(input1)
     print(f"Expected: {expected_output}")
     print(f"Actual:   {result}")
     if result == expected_output:

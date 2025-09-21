@@ -1,6 +1,20 @@
-########################################################################################
-#Written by me
-########################################################################################
+"""
+Fix Unique Playlist
+Your music app keeps showing duplicate songs in playlists. The unique_playlist function should return a new list with duplicates removed while preserving the order of the first time each song appears.
+
+Right now it's keeping the last occurrence of duplicates instead of the first.
+
+For example:
+    a = ["Intro", "Beat It", "Intro", "Finale", "Beat It"]
+    # Expected: ["Intro", "Beat It", "Finale"]
+    # Current (buggy): ["Intro", "Finale", "Beat It"]
+
+Requirements:
+    Return a new list containing each song exactly once.
+    Keep the order of the first time each song appears.
+    Do not modify the input list.
+"""
+
 def unique_playlist(songs):
     result = []
     for song in songs:
@@ -8,9 +22,6 @@ def unique_playlist(songs):
             result.append(song)
     return result
 
-########################################################################################
-#Written by Boot.dev
-########################################################################################
 run_cases = [
     (["Intro", "Beat It", "Intro", "Finale", "Beat It"], ["Intro", "Beat It", "Finale"]),
     (["A", "B", "C"], ["A", "B", "C"]),
@@ -24,6 +35,7 @@ submit_cases = run_cases + [
     (["x", "y", "z", "x", "y"], ["x", "y", "z"]),
 ]
 
+
 def test(input_list, expected_output):
     print("---------------------------------")
     print(f"Input playlist: {input_list}")
@@ -35,6 +47,7 @@ def test(input_list, expected_output):
         return True
     print("Fail")
     return False
+
 
 def main():
     passed = 0
@@ -54,6 +67,7 @@ def main():
         print(f"{passed} passed, {failed} failed, {skipped} skipped")
     else:
         print(f"{passed} passed, {failed} failed")
+
 
 test_cases = submit_cases
 if "__RUN__" in globals():
