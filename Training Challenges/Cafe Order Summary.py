@@ -20,6 +20,7 @@ Expected behavior example (structure only):
     Line 2: Coffee total (cents): 600
     Line 3: Sandwich total (cents): 750
     Line 4: Grand total (cents): 1350
+    
 """
 
 message_start = "Order for: "
