@@ -30,3 +30,5 @@ def get_delete_bits(user_permissions):
 
 def get_edit_bits(user_permissions):
     return user_permissions & can_edit_guild
+
+
