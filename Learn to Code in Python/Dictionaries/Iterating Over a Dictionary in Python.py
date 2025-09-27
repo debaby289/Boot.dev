@@ -1,10 +1,6 @@
 """
 Assignment
-We need to display on our player's screens what the most common enemy in a given area of the game map is.
-
-Complete the get_most_common_enemy function by iterating over all enemies in the dictionary and returning only the name of the enemy with the highest count.
-
-If there are no enemies, return the Python None value (not a string). If there are multiple enemies with the same highest count, return the first one found.
+We need to display on our player's screens what the most common enemy in a given area of the game map is. Complete the get_most_common_enemy function by iterating over all enemies in the dictionary and returning only the name of the enemy with the highest count. If there are no enemies, return the Python None value (not a string). If there are multiple enemies with the same highest count, return the first one found.
 
 enemies_dict is a dictionary of name -> count. 
 """
