@@ -7,9 +7,7 @@ Complete the get_character_record function. It takes a character's name, server,
     "rank"
     "id"
 Create and return a dictionary with the keys above. Assign each of the four inputs to the matching key, ie: "name": name.
-
 Next, we can't have two characters named bloodwarrior123's on the same server! For the fifth key, id, create a unique value as follows:
-
 Concatenate the name and the server inputs with a # in the middle. For example, given:
     name = "bloodwarrior123"
     server = "server1"
