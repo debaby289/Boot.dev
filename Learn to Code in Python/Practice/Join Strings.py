@@ -4,11 +4,10 @@ Complete the join_strings() function. It takes a list of strings and returns a n
 """
 
 def join_strings(strings):
-    result = strings[0]
-    
-    for s in strings[1:]: 
-        result += "," + s
-    return result
+    joined = ""
+    for s in strings:
+        joined += s + ","
+    return joined[:-1]
 
 run_cases = [
     (["hello", "world"], "hello,world"),
