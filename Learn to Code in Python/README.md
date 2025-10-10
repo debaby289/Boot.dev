@@ -1,4 +1,5 @@
-What will you learn?
+# What will you learn?
+
 Learn the basics of the Python programming language, and why it's one of the most popular programming languages out there. You'll get hands-on practice with all the core concepts, and learn how to apply them to real-world problems. You don't need any prior programming experience to be able to complete this course, it's intended for complete beginners.
 
 Chapter List

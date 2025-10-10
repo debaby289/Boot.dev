@@ -1,4 +1,5 @@
-What will you learn?
+# What will you learn?
+
 So many developers go years before understanding the basics of shells, terminals, and Linux (or more generally Unix-like systems). Here you'll learn to navigate files and directories, install dependencies, configure your PATH, and use powerful CLI tools like grep, find, and pipes. Never fear the command line again, make it fear you.
 
 Chapter List

@@ -1,4 +1,4 @@
-What will you learn?
+# What will you learn?
 The second installment of our complete Git course. In this advanced course you'll learn how to use Git to collaborate on teams of developers. We will focus a lot more on conflicts and how to safely resolve and revert the natural issues that arise when working on large software teams.
 
 Chapter List
